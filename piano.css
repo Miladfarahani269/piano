@@ -44,7 +44,7 @@ h2 {
     min-height: 120px;
 }
 
-.keys {
+.piano-keys {
     display: block;
     width: 100%;
     height: 350px;
@@ -115,7 +115,7 @@ h2 {
     box-shadow: 0 0 1rem #028ae9;
 }
 
-.hints {
+.letters {
    display: block;
     width: 100%;
     opacity: 0;
@@ -126,7 +126,7 @@ h2 {
     
 }
 
-.keys:hover .hints {
+.piano-keys:hover .letters {
     opacity: 1;
 }
 

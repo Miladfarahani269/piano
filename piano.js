@@ -1,6 +1,6 @@
 const note = document.querySelector('.nowplaying');
 const keys = document.querySelectorAll('.key');
-const hints = document.querySelectorAll('.hints');
+const letters = document.querySelectorAll('.letters');
 
 window.addEventListener('keydown' , function(e) {
     const key = document.querySelector(`.key[data-key= '${e.key.charCodeAt(e)}']`)
@@ -22,7 +22,6 @@ function removeTransition() {
 }
 
 keys.forEach(key => key.addEventListener('transitionend' , removeTransition));
-
-hints.forEach(function(elm , index) {
+letters.forEach(function(elm , index) {
     elm.style = `transition-delay : ${index * 50}ms`
 });
